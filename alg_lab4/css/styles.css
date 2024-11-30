@@ -1,0 +1,212 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.container {
+   display: flex;
+   flex-direction: column;
+   height:100%;
+}
+
+.header {
+	padding: 50px;
+	text-align: center;
+	background: darkgray;
+	color: #321818;
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: unset;
+}
+
+.navbar {
+	display: flex;
+	background-color: crimson;
+	justify-content: center;
+	font-family:Mulish;
+}
+
+.navbar a {
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Mulish;
+}
+
+.navbar a:hover , .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color: #ead7d4;
+	color: black;
+	font-family: Mulish;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	font-family: Mulish;
+}
+
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 15px 20px;
+	background-color: crimson;
+	font-family: Mulish;
+	margin: 0;
+	text-align: center;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	color: white;
+	background-color: crimson;
+	min-width: 140px;
+	z-index: 1;
+	text-align: center;
+}
+
+.dropdown-content a {
+	float: none;
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-family: Mulish;
+}
+
+.dropdown-content a:hover {
+	background-color: #ead7d4;
+	text-align: center;
+	font-family: Mulish;
+}
+
+.show {
+  display: block;
+}
+
+.row {  
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	text-align: center;
+}
+
+.main {
+	padding: 20px;
+	flex: 1 0 auto;
+	background-color: pink;
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	padding: 10px;
+	text-align: center;
+	font-family: "Great Vibes", serif;
+	background: crimson;
+	flex: 0 0 auto;
+	margin-bottom: 0;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
+	[class*=""] {
+		width: 100%;
+	}
+	h1 {
+		font-size: 170%;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
+	[class*=""] {
+		width: 100%;
+	}
+	.dropdown-content {
+		width: 100%;
+		overflow: auto;
+	}
+	h1 {
+		font-size: 170%;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	.row, .navbar {   
+		flex-direction: column;
+	}
+	[class*=""] {
+		width: 100%;
+	}
+
+	.dropdown-content {
+		width: 100%;
+		overflow: auto;
+	}
+	.main_author {
+		background-size: 60%;
+	}
+	h1 {
+		font-size: 170%;
+	}
+}
+
+h1 {
+	font-family: "Great Vibes", serif;
+}
+
+h2 {
+	font-family: "Great Vibes", serif;
+	font-size: 150%
+}
+
+p {
+	font-family: Mulish;
+	font-size: 120%;
+}
+
+img {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+}
+
+.text {
+	font-family: Mulish;
+	font-size: 120%;
+}
+
+.input {
+	font-family: Mulish;
+	font-size: 90%;
+}
+
+button {
+	font-family: Mulish;
+}

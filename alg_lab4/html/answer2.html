@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jaro:opsz@6..72&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+		<title>Лабораторная работа №4</title>
+		<script src="../js/list.js"></script>
+		<script src="../js/lab4_2_12.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Алгоритмизация и программирование</h1>
+				<p style="font-size:150%;"><b>Лабораторная работа №4</b></p>
+				<p style="font-size:150%;"><b><i>Циклы</i></b></p>
+			</div>
+			<div class="navbar">
+				<a href="../index.html">Главная</a>
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn"> Задания 
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+						<a href="answer1.html">Задание 1</a>
+						<a href="answer2.html">Задание 2</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="main">
+					<h2 style="text-align:center;">Задание 2</h2>
+					<p>Дано целое число N (> 0). Найти произведение  1.1 · 1.2 · 1.3 · … (N сомножителей).</p>
+					<p>Введите:</p>
+					<div class="text">
+						<label for="numberN">Целое число N больше 0</label><br>
+						<input class="input" type="text" id="numberN" value="">
+						<button class="input" onClick="getComposition()"> Ввод </button><br>
+					</div>
+					<p>Получившееся произведение:</p>
+					<div class="text" id="resultContainer"></div><br>
+				</div>
+			</div>
+			<div class="footer">
+				<h3>© Kononov, 2024</h3>
+			</div>
+		</div>
+	</body>
+</html>
